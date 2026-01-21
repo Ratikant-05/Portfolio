@@ -30,7 +30,7 @@ const ContactPage = () => {
   }
 
   return (
-    <div className="flex w-full justify-center px-4 pt-24 pb-16">
+    <div className="flex w-full justify-center px-4 pt-16 pb-16">
       <div className="grid w-full max-w-5xl grid-cols-1 overflow-hidden rounded-2xl bg-white shadow-xl md:grid-cols-2">
 
         {/* LEFT PANEL */}
