@@ -18,6 +18,7 @@ const ContactPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    console.log(form)
     setForm({
       firstName: "",
       lastName: "",
@@ -26,32 +27,39 @@ const ContactPage = () => {
       service: "web-development",
       message: "",
     })
-    console.log(form)
   }
 
   return (
-    <div className="flex w-full justify-center px-4">
-
+    <div className="flex w-full justify-center px-4 pt-24 pb-16">
       <div className="grid w-full max-w-5xl grid-cols-1 overflow-hidden rounded-2xl bg-white shadow-xl md:grid-cols-2">
 
-        <div className="relative bg-[#3f2b96] p-8 text-white">
-          <h2 className="text-2xl font-bold">Contact Information</h2>
-          <p className="mt-2 text-sm text-gray-200">
-            Fill up the form and our team will get back to you within 24 hours.
-          </p>
+        {/* LEFT PANEL */}
+        <div className="relative flex flex-col justify-between bg-[#3f2b96] p-6 text-white sm:p-8">
+          <div>
+            <h2 className="text-2xl font-bold">Contact Information</h2>
+            <p className="mt-2 text-sm text-gray-200">
+              Fill up the form and our team will get back to you within 24 hours.
+            </p>
 
-          <div className="mt-8 space-y-4 text-sm">
-            <p>📞 +91 9310088262</p>
-            <p>✉️ ratikants388@gmail.com</p>
-            <p>📍 Rohini, New Delhi</p>
+            <div className="mt-6 space-y-3 text-sm">
+              <p>📞 +91 9310088262</p>
+              <p>✉️ ratikants388@gmail.com</p>
+              <p>📍 Rohini, New Delhi</p>
+            </div>
           </div>
 
-          <div className="absolute bottom-0 right-24 flex text-lg">
-              <Lottie path="/Support.json" autoplay loop className="w-120" />
+          <div className="hidden md:flex justify-end">
+            <Lottie
+              path="/Support.json"
+              autoplay
+              loop
+              className="w-150 mr-12"
+            />
           </div>
         </div>
 
-        <form onSubmit={handleSubmit} className="p-8">
+        {/* FORM */}
+        <form onSubmit={handleSubmit} className="p-6 sm:p-8">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             <div>
               <label className="text-xs text-gray-500">First Name</label>
@@ -60,7 +68,6 @@ const ContactPage = () => {
                 name="firstName"
                 value={form.firstName}
                 onChange={handleChange}
-                autoComplete="off"
                 className="w-full border-b py-2 text-sm outline-none focus:border-purple-600"
               />
             </div>
@@ -72,7 +79,6 @@ const ContactPage = () => {
                 name="lastName"
                 value={form.lastName}
                 onChange={handleChange}
-                autoComplete="off"
                 className="w-full border-b py-2 text-sm outline-none focus:border-purple-600"
               />
             </div>
@@ -84,7 +90,6 @@ const ContactPage = () => {
                 name="email"
                 value={form.email}
                 onChange={handleChange}
-                autoComplete="off"
                 className="w-full border-b py-2 text-sm outline-none focus:border-purple-600"
               />
             </div>
@@ -96,7 +101,6 @@ const ContactPage = () => {
                 name="phone"
                 value={form.phone}
                 onChange={handleChange}
-                autoComplete="off"
                 className="w-full border-b py-2 text-sm outline-none focus:border-purple-600"
               />
             </div>
@@ -107,7 +111,7 @@ const ContactPage = () => {
               What type of service do you need?
             </p>
 
-            <div className="flex flex-wrap gap-6 text-sm">
+            <div className="flex flex-wrap gap-4 text-sm">
               {[
                 { id: "web-design", label: "Web Design" },
                 { id: "web-development", label: "Web Development" },
@@ -136,7 +140,6 @@ const ContactPage = () => {
               value={form.message}
               onChange={handleChange}
               rows={4}
-              autoComplete="off"
               placeholder="Write your message..."
               className="mt-1 w-full resize-none border-b py-2 text-sm outline-none focus:border-purple-600"
             />
@@ -144,7 +147,7 @@ const ContactPage = () => {
 
           <button
             type="submit"
-            className="mt-8 rounded-lg bg-[#3f2b96] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#2f2175]"
+            className="mt-8 w-full rounded-lg bg-[#3f2b96] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#2f2175]"
           >
             Send Message
           </button>
