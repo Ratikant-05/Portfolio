@@ -7,10 +7,10 @@ import { SiExpress, SiMongodb, SiTypescript } from 'react-icons/si'
 
 const ExperienceCard = () => {
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-10">
       
       <div className="rounded-xl bg-white px-8 py-6 shadow-lg">
-        <h3 className="font-[Poppins] text-xl font-semibold text-blue-500 mb-4">
+        <h3 className="font-[Poppins] text-xl font-semibold text-blue-500 mb-6">
           Work Experience
         </h3>
 

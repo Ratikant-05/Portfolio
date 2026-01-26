@@ -1,23 +1,12 @@
-import {
-  Box,
-  BriefcaseBusiness,
-  House,
-  Layers,
-  MessagesSquare,
-  Moon,
-  Pencil,
-  Phone,
-  SquareUser,
-  Menu,
-  X,
-} from "lucide-react"
-import { NavLink } from "react-router-dom"
+import {Box,BriefcaseBusiness,House,Layers,MessagesSquare,Moon,Pencil,Phone,SquareUser,Menu,X,} from "lucide-react"
+import { NavLink, useNavigate } from "react-router-dom"
 import { useState } from "react"
 
 const navItemClass =
   "flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-gray-500 transition hover:bg-gray-200"
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const [open, setOpen] = useState(false)
 
   return (
@@ -25,9 +14,7 @@ const Navbar = () => {
       <div className="mx-auto w-[92%] py-4">
         <nav className="relative rounded-2xl bg-white px-6 py-4 shadow-lg">
 
-          {/* TOP BAR */}
           <div className="flex items-center justify-between">
-            {/* Logo */}
             <NavLink to="/" className="flex items-center gap-1">
               <Box />
               <span className="font-[Montserrat] text-xl font-bold">
@@ -38,7 +25,6 @@ const Navbar = () => {
               </span>
             </NavLink>
 
-            {/* Desktop Nav */}
             <ul className="hidden items-center gap-6 md:flex">
               <NavItem to="/" icon={<House />} label="Home" />
               <NavItem to="/about" icon={<SquareUser />} label="About" />
@@ -48,17 +34,15 @@ const Navbar = () => {
               <NavItem to="/contact" icon={<MessagesSquare />} label="Contact" />
             </ul>
 
-            {/* Actions */}
             <div className="hidden items-center gap-4 md:flex">
-              <button className="text-gray-500 hover:text-black">
+              {/* <button className="text-gray-500 hover:text-black">
                 <Moon />
-              </button>
-              <button className="flex items-center gap-2 rounded-lg border bg-black px-4 py-2 font-bold text-white transition hover:bg-white hover:text-black">
+              </button> */}
+              <button onClick={() => navigate('/contact')} className="flex items-center gap-2 rounded-lg border bg-black px-4 py-2 font-bold text-white cursor-pointer transition hover:bg-white hover:text-black">
                 Let's Talk <Phone className="w-5" />
               </button>
             </div>
 
-            {/* Mobile Menu Button */}
             <button
               onClick={() => setOpen(!open)}
               className="md:hidden"
@@ -67,7 +51,6 @@ const Navbar = () => {
             </button>
           </div>
 
-          {/* MOBILE MENU */}
           {open && (
             <div className="absolute left-0 right-0 top-full mt-3 rounded-2xl bg-white p-4 shadow-lg md:hidden">
               <div className="flex flex-col gap-2">
@@ -79,9 +62,9 @@ const Navbar = () => {
                 <NavItem to="/contact" icon={<MessagesSquare />} label="Contact" onClick={() => setOpen(false)} />
 
                 <div className="mt-4 flex items-center gap-4">
-                  <button className="text-gray-500 hover:text-black">
+                  {/* <button className="text-gray-500 hover:text-black">
                     <Moon />
-                  </button>
+                  </button> */}
                   <button className="flex items-center gap-2 rounded-lg border bg-black px-4 py-2 font-bold text-white transition hover:bg-white hover:text-black">
                     Let's Talk <Phone className="w-5" />
                   </button>

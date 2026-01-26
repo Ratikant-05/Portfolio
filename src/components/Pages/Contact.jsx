@@ -33,7 +33,6 @@ const ContactPage = () => {
     <div className="flex w-full justify-center px-4 pt-16 pb-16">
       <div className="grid w-full max-w-5xl grid-cols-1 overflow-hidden rounded-2xl bg-white shadow-xl md:grid-cols-2">
 
-        {/* LEFT PANEL */}
         <div className="relative flex flex-col justify-between bg-[#3f2b96] p-6 text-white sm:p-8">
           <div>
             <h2 className="text-2xl font-bold">Contact Information</h2>
@@ -58,7 +57,6 @@ const ContactPage = () => {
           </div>
         </div>
 
-        {/* FORM */}
         <form onSubmit={handleSubmit} className="p-6 sm:p-8">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             <div>

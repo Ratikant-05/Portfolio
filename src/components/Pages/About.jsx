@@ -4,7 +4,6 @@ const About = () => {
   return (
     <section className="mx-auto max-w-7xl px-6 py-16 space-y-20">
 
-      {/* INTRO */}
       <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
         <div>
           <h1 className="text-4xl font-bold text-gray-900">
@@ -38,7 +37,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* QUICK FACTS */}
         <div className="rounded-2xl bg-white p-8 shadow-lg">
           <h2 className="text-2xl font-semibold text-gray-800">
             Quick Facts
@@ -65,13 +63,14 @@ const About = () => {
             </li>
           </ul>
 
-          <button className="mt-8 w-full rounded-xl bg-black py-3 text-sm font-semibold text-white transition hover:bg-gray-800">
-            Download Resume
-          </button>
+          <a href="/resume.pdf" download>
+            <button className="mt-8 w-full rounded-xl bg-black py-3 text-sm font-semibold text-white transition cursor-pointer hover:bg-gray-800">
+              Download Resume
+            </button>
+          </a>
         </div>
       </div>
 
-      {/* WHAT I DO */}
       <div>
         <h2 className="text-3xl font-bold text-gray-900 text-center">
           What I Do
@@ -107,7 +106,6 @@ const About = () => {
         </div>
       </div>
 
-      {/* JOURNEY */}
       <div>
         <h2 className="text-3xl font-bold text-gray-900 text-center">
           My Journey
@@ -136,7 +134,6 @@ const About = () => {
         </div>
       </div>
 
-      {/* WORK VALUES */}
       <div className="text-center max-w-3xl mx-auto">
         <h2 className="text-3xl font-bold text-gray-900">
           How I Work

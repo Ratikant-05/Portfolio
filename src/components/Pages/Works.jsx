@@ -4,30 +4,44 @@ const projects = [
   {
     title: "Portfolio Website",
     description:
-      "A personal portfolio website built with React and Tailwind CSS showcasing projects, skills, and contact information.",
-    tech: ["React", "Tailwind", "Vite"],
-    link: "#",
+      "Designed and developed a personal portfolio website to showcase projects, skills, and contact information. The website is fully responsive and optimized for performance and SEO. Implemented modern UI design principles, smooth navigation, and reusable components to ensure a professional online presence. The portfolio highlights web development projects and demonstrates frontend design and development skills.",
+    tech: ["React", "Tailwind", "Vite", "JavaScript"],
+    link: "https://ratikantportfolio.vercel.app/",
   },
   {
-    title: "E-commerce Platform",
+    title: "Highway Delite",
     description:
-      "A full-stack e-commerce application with authentication, product management, and payment integration.",
-    tech: ["React", "Node.js", "MongoDB", "Stripe"],
-    link: "#",
+      "Developed a travel booking web application that allows users to browse destinations, view travel packages, and make bookings online. Implemented features such as search and filtering, booking forms, and dynamic price display. Built REST APIs to handle booking data and user information, and ensured a responsive, user-friendly interface across devices. Focused on performance, usability, and smooth frontend–backend integration.",
+    tech: ["React", "Node.js", "MongoDB", "API's", "Database Integration"],
+    link: "https://highway-delite-frontend-xc2t.onrender.com/",
   },
   {
     title: "Blog Platform",
     description:
-      "A modern blogging platform with user authentication, rich text editor, and REST APIs.",
-    tech: ["React", "Express", "MongoDB"],
-    link: "#",
+      "Built a full-featured blog platform where users can create, edit, and delete blog posts. The platform supports dynamic content rendering, structured blog sections, and responsive layouts for different screen sizes. Implemented backend APIs to manage blog data and frontend components for displaying posts efficiently. Focused on clean UI, scalability, and content management.",
+    tech: ["React", "Express", "MongoDB", "REST APIs", "Database integration", "Node.js", "Express"],
+    link: "",
   },
   {
     title: "Task Management App",
     description:
-      "A productivity-focused task manager with real-time updates and clean UI.",
-    tech: ["React", "Node.js", "WebSockets"],
-    link: "#",
+      "Developed a task management web application that helps users create, update, and organize tasks efficiently. The app supports features like task categorization, due dates, and status tracking to improve productivity. Implemented user-friendly UI components and handled form validation and state management on the frontend. The backend manages task data with CRUD operations and ensures smooth data flow between client and server.",
+    tech: ["React", "Node.js", "Express", "MongoDB", "JavaScript", "HTML5"],
+    link: "https://cherry-frontend-xtvi.onrender.com/",
+  },
+  {
+    title: "Real Time Chat Application",
+    description:
+      "Developed a real-time chatting application that allows users to send and receive messages instantly. Implemented features such as user authentication, one-to-one chat, and real-time message updates. Used WebSockets to enable live communication and ensured smooth message delivery without page refresh. Focused on responsive UI, efficient state handling, and scalable backend architecture.",
+    tech: ["React", "JavaScript", "Web Sockets", "Tailwind", "Vite", "Node", "Express"],
+    link: "",
+  },
+  {
+    title: "Offerings Page",
+    description:
+      "Designed and developed an offerings (services) page to clearly present products or services with structured sections and engaging UI. Implemented responsive layouts, reusable components, and smooth navigation to enhance user experience. Focused on clear content hierarchy, visual consistency, and performance optimization to effectively communicate service details to users.",
+    tech: ["React", "JavaScript", "Tailwind", "Vite", "Node", "Express"],
+    link: "https://offerings-s9px.onrender.com/",
   },
 ]
 
