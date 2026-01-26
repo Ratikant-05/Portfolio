@@ -16,11 +16,11 @@ const projects = [
     link: "https://highway-delite-frontend-xc2t.onrender.com/",
   },
   {
-    title: "Blog Platform",
+    title: "Restaurant App",
     description:
-      "Built a full-featured blog platform where users can create, edit, and delete blog posts. The platform supports dynamic content rendering, structured blog sections, and responsive layouts for different screen sizes. Implemented backend APIs to manage blog data and frontend components for displaying posts efficiently. Focused on clean UI, scalability, and content management.",
+      "Built a full-featured restaurant app where users can create, edit, and delete review posts. The platform supports dynamic content rendering, structured food sections, and responsive layouts for different screen sizes. Implemented backend APIs to manage restaurant data and frontend components for displaying restaurants efficiently. Focused on clean UI, scalability, and content management.",
     tech: ["React", "Express", "MongoDB", "REST APIs", "Database integration", "Node.js", "Express"],
-    link: "",
+    link: "https://restaurant-app-one-gamma.vercel.app/",
   },
   {
     title: "Task Management App",
@@ -34,7 +34,7 @@ const projects = [
     description:
       "Developed a real-time chatting application that allows users to send and receive messages instantly. Implemented features such as user authentication, one-to-one chat, and real-time message updates. Used WebSockets to enable live communication and ensured smooth message delivery without page refresh. Focused on responsive UI, efficient state handling, and scalable backend architecture.",
     tech: ["React", "JavaScript", "Web Sockets", "Tailwind", "Vite", "Node", "Express"],
-    link: "",
+    link: "https://real-time-chat-app-sockets.vercel.app/login",
   },
   {
     title: "Offerings Page",

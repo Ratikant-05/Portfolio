@@ -28,9 +28,9 @@ const RecentProjectsCard = () => {
           </div>
         </Link>
 
-        <Link to="https://project-three-url.com" target="_blank">
+        <Link to="https://highway-delite-frontend-xc2t.onrender.com/" target="_blank">
           <div className="rounded-xl px-2 py-2 shadow-lg transition hover:scale-[1.02]">
-            <img className="rounded-xl" src="/restaurantApp.png" alt="restaurantApp" />
+            <img className="rounded-xl" src="/highway.png" alt="highwayDelite" />
           </div>
         </Link>
       </div>
